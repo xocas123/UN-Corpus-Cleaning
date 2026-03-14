@@ -1,0 +1,124 @@
+{
+  "description": "UN Document Boilerplate Text Cleaning Configuration",
+  "version": "2.0",
+  "boilerplate_patterns": {
+    "formatting_artifacts": {
+      "enabled": true,
+      "description": "Formatting artifacts, repeated punctuation, and OCR errors",
+      "patterns": [
+        "(?:\\.\\s+){3,}\\.",
+        "(?:–\\s+){3,}–",
+        "(?:•\\s+){3,}•",
+        "(?:—\\s+){3,}—",
+        "(?:-\\s+){3,}-",
+        "(?:\\d\\s+){3,}\\d",
+        "(?:[a-z]\\s+){4,}[a-z]\\s+[a-z]",
+        "(?:and,\\s+){3,}and,?"
+      ]
+    },
+    "administrative_metadata": {
+      "enabled": true,
+      "description": "Administrative status markers, audit language, and financial table headers",
+      "patterns": [
+        "(?i)status:\\s*in\\s+progress\\s+priority:\\s*(?:high|medium|low)\\s+target\\s+date:.*?(?:quarter|\\d{4})",
+        "(?i)(?:agreed|disagrees?)\\s+with\\s+the\\s+board[''']?s\\s+recommendation\\s+that.*?(?=\\.|\\n)",
+        "(?i)expenditure\\s+appropriation\\s+adjustments\\s+mandates\\s+other\\s+total\\s+percentage\\s+recosting\\)?",
+        "(?i)as\\s+at\\s+\\d{1,2}\\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\\s+\\d{4}\\s*\\(thousands\\s+of\\s+united\\s+states\\s+dollars\\)",
+        "(?i)statement\\s+of\\s+income\\s+and\\s+expenditure\\s+and\\s+changes\\s+in\\s+reserves\\s+and\\s+fund\\s+balances",
+        "(?i)\\(thousands\\s+of\\s+united\\s+states\\s+dollars\\)",
+        "(?i)financial\\s+resources\\s+by\\s+main\\s+category\\s+of\\s+expenditure",
+        "(?i)(?:before\\s+)?expenditure\\s+appropriation\\s+adjustments"
+      ]
+    },
+    "procedural_references": {
+      "enabled": true,
+      "description": "Committee citations, report attributions, and official records",
+      "patterns": [
+        "(?i)(?:the\\s+)?advisory\\s+committee\\s+on\\s+administrative\\s+and\\s+budgetary\\s+(?:questions|matters)",
+        "(?i)report\\s+of\\s+the\\s+secretary-general\\s+on\\s+the\\s+work\\s+of\\s+the\\s+organization",
+        "(?i)official\\s+records\\s+of\\s+the\\s+(?:general\\s+assembly|economic\\s+and\\s+social\\s+council),?\\s*(?:thirty-first|thirty-second|thirty-third|[a-z\\-]+)?\\s*(?:session)?",
+        "(?i)by\\s+the\\s+general\\s+assembly\\s+in\\s+its\\s+resolution\\s*(?:\\d+)?",
+        "(?i)upon\\s+enquiry,\\s+the\\s+advisory\\s+committee\\s+was\\s+informed\\s+that",
+        "(?i)for\\s+the\\s+biennium\\s+ended\\s+\\d{1,2}\\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\\s+\\d{4}",
+        "(?i)records\\s+of\\s+the\\s+general\\s+assembly,\\s*(?:thirty-first|thirty-second|[a-z\\-]+)?\\s*session",
+        "(?i)progress\\s+towards\\s+the\\s+attainment\\s+of\\s+the\\s+objective,\\s+and\\s+performance\\s+measure"
+      ]
+    },
+    "standard_entity_names": {
+      "enabled": false,
+      "description": "Long-form standard entity names (disabled by default - may remove substantive content)",
+      "patterns": [
+        "(?i)united\\s+kingdom\\s+of\\s+great\\s+britain\\s+and\\s+northern\\s+ireland",
+        "(?i)economic\\s+and\\s+social\\s+development\\s+in\\s+latin\\s+america\\s+and\\s+the\\s+caribbean",
+        "(?i)office\\s+of\\s+the\\s+united\\s+nations\\s+high\\s+commissioner\\s+for\\s+(?:refugees|human\\s+rights)",
+        "(?i)least\\s+developed\\s+countries,\\s+landlocked\\s+developing\\s+countries\\s+and\\s+small\\s+island\\s+developing",
+        "(?i)department\\s+of\\s+(?:peacekeeping\\s+operations|economic\\s+and\\s+social\\s+affairs)",
+        "(?i)general\\s+assembly\\s+and\\s+economic\\s+and\\s+social\\s+council\\s+affairs\\s+and\\s+conference\\s+management",
+        "(?i)office\\s+for\\s+the\\s+coordination\\s+of\\s+humanitarian\\s+affairs"
+      ]
+    },
+    "opening_ceremonials": {
+      "enabled": true,
+      "description": "Opening phrases thanking previous speakers and officials",
+      "patterns": [
+        "(?:On behalf of the General Assembly|On behalf of|I have the honour to welcome).*?(?=[A-Z][a-z]+\\s+(?:said|spoke|stated|addressed))",
+        "(?:Allow me|I would like to|We would like to)\\s+(?:at the outset|at the beginning)\\s+to(?:.*?)congratulate.*?(?=\\w+\\s+(?:said|spoke|stated))",
+        "I would like to congratulate.*?(?:\\n\\n|\\n[A-Z])"
+      ]
+    },
+    "procedural_markers": {
+      "enabled": true,
+      "description": "Chair/President procedural statements",
+      "patterns": [
+        "(?:The\\s+)?(?:President|Chair|Chairperson):\\s+.*?(?=\\n[A-Z])",
+        "(?:The President|The Chair):\\s+.*?(?=\\n\\w+)"
+      ]
+    },
+    "gratitude_sections": {
+      "enabled": true,
+      "description": "Sections thanking Secretary-General, previous presidents, etc.",
+      "patterns": [
+        "I would like to thank.*?Secretary-General.*?(?=\\n\\n|\\n[A-Z])",
+        "I would also like to (?:congratulate|thank).*?(?=\\n\\n|\\n[A-Z][a-z])",
+        "Thank you.*?(?:for your|for the).*?(?=\\n\\n|\\n[A-Z])"
+      ]
+    },
+    "document_references": {
+      "enabled": true,
+      "description": "UN document reference citations",
+      "patterns": [
+        "\\((?:A|S|E)/[A-Z0-9/\\.]+\\)",
+        "\\(see\\s+(?:A|S|E)/[A-Z0-9/\\.]+\\)",
+        "\\[.*?document.*?\\]"
+      ]
+    },
+    "closing_statements": {
+      "enabled": true,
+      "description": "Generic closing phrases about UN values and hope",
+      "patterns": [
+        "In conclusion,.*?(?=\\Z|\\n{2,})",
+        "(?:Confidence and hope|All of us, as in a marriage).*?(?=\\Z)",
+        "The world's problems could be solved peacefully.*?(?=\\Z)"
+      ]
+    },
+    "ceremonial_phrases": {
+      "enabled": true,
+      "description": "Ceremonial opening and closing language",
+      "patterns": [
+        "\\*+.*?\\*+",
+        "\\n\\s+.*?\\(spoke in (?:English|French|Spanish|Arabic)\\).*?\\n",
+        "Address/Statement recorded in .*?\\)"
+      ]
+    }
+  },
+  "text_cleaning": {
+    "remove_extra_whitespace": true,
+    "remove_parenthetical_attributions": true,
+    "description": "Additional text cleaning options"
+  },
+  "output_options": {
+    "preserve_structure": false,
+    "min_paragraph_length": 50,
+    "description": "Only keep paragraphs with meaningful content (>50 chars)"
+  }
+}

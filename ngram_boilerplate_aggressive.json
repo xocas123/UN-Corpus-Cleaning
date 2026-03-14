@@ -1,0 +1,2849 @@
+{
+  "formatting": [
+    {
+      "phrase": "– – – –",
+      "frequency": 6719,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "– – – – –",
+      "frequency": 4047,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "– – – – – –",
+      "frequency": 2263,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "0 0 0 0",
+      "frequency": 1690,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "– – – – – – –",
+      "frequency": 1536,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "0 0 0 0 0",
+      "frequency": 1361,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "• • • •",
+      "frequency": 1247,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "0 0 0 0 0 0",
+      "frequency": 1214,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "0 0 0 0 0 0 0",
+      "frequency": 1105,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "0 0 0 0 0 0 0 0",
+      "frequency": 1020,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "• • • • •",
+      "frequency": 1016,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "– – – – – – – –",
+      "frequency": 997,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "0 0 0 0 0 0 0 0 0",
+      "frequency": 948,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "- - - -",
+      "frequency": 938,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "0 0 0 0 0 0 0 0 0 0",
+      "frequency": 880,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "• • • • • •",
+      "frequency": 837,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "• • • • • • •",
+      "frequency": 687,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "– – – – – – – – –",
+      "frequency": 664,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "• • • • • • • •",
+      "frequency": 568,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "- - - - -",
+      "frequency": 534,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "– – – – – – – – – –",
+      "frequency": 495,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "• • • • • • • • •",
+      "frequency": 468,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "• • • • • • • • • •",
+      "frequency": 386,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "- - - - - -",
+      "frequency": 332,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "- - - - - - -",
+      "frequency": 210,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "· · · · · ·",
+      "frequency": 148,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "4 4 4 4 4 4",
+      "frequency": 147,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "- - - - - - - -",
+      "frequency": 134,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "· · · · · · ·",
+      "frequency": 131,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "· · · · · · · ·",
+      "frequency": 117,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "4 4 4 4 4 4 4",
+      "frequency": 112,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "· · · · · · · · ·",
+      "frequency": 104,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "· · · · · · · · · ·",
+      "frequency": 93,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "- - - - - - - - -",
+      "frequency": 86,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "4 4 4 4 4 4 4 4",
+      "frequency": 77,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "- - - - - - - - - -",
+      "frequency": 59,
+      "ngram_size": "10"
+    }
+  ],
+  "administrative": [
+    {
+      "phrase": "of united states dollars)",
+      "frequency": 1446,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "(thousands of united states",
+      "frequency": 1321,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "(thousands of united states dollars)",
+      "frequency": 1163,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "status: in progress priority:",
+      "frequency": 990,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "agreed with the board’s",
+      "frequency": 914,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "agreed with the board’s recommendation",
+      "frequency": 785,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "agreed with the board’s recommendation that",
+      "frequency": 673,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "target date: fourth quarter",
+      "frequency": 654,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "date: fourth quarter of",
+      "frequency": 654,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "target date: fourth quarter of",
+      "frequency": 651,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "priority: medium target date:",
+      "frequency": 636,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "priority: high target date:",
+      "frequency": 609,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "agreed with the board’s recommendation that it",
+      "frequency": 559,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "proposed programme budget for",
+      "frequency": 552,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "the proposed programme budget",
+      "frequency": 549,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "in progress priority: high",
+      "frequency": 501,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "status: in progress priority: high",
+      "frequency": 501,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "progress priority: high target",
+      "frequency": 500,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "in progress priority: high target",
+      "frequency": 500,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "status: in progress priority: high target",
+      "frequency": 500,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "progress priority: high target date:",
+      "frequency": 499,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "in progress priority: high target date:",
+      "frequency": 499,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "status: in progress priority: high target date:",
+      "frequency": 499,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "committee was informed that",
+      "frequency": 487,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "the proposed programme budget for",
+      "frequency": 487,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "in progress priority: medium",
+      "frequency": 485,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "progress priority: medium target",
+      "frequency": 485,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "status: in progress priority: medium",
+      "frequency": 485,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "in progress priority: medium target",
+      "frequency": 485,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "progress priority: medium target date:",
+      "frequency": 485,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "status: in progress priority: medium target",
+      "frequency": 485,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "in progress priority: medium target date:",
+      "frequency": 485,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "status: in progress priority: medium target date:",
+      "frequency": 485,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "on administrative and budgetary",
+      "frequency": 364,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "committee on administrative and budgetary",
+      "frequency": 352,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "budget for the biennium",
+      "frequency": 343,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "advisory committee on administrative and budgetary",
+      "frequency": 338,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "status: in progress priority: medium target date: fourth quarter of",
+      "frequency": 332,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "priority: medium target date: fourth",
+      "frequency": 332,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "medium target date: fourth quarter",
+      "frequency": 332,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "progress priority: medium target date: fourth",
+      "frequency": 332,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "priority: medium target date: fourth quarter",
+      "frequency": 332,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "medium target date: fourth quarter of",
+      "frequency": 332,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "in progress priority: medium target date: fourth",
+      "frequency": 332,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "progress priority: medium target date: fourth quarter",
+      "frequency": 332,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "priority: medium target date: fourth quarter of",
+      "frequency": 332,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "status: in progress priority: medium target date: fourth",
+      "frequency": 332,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "in progress priority: medium target date: fourth quarter",
+      "frequency": 332,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "progress priority: medium target date: fourth quarter of",
+      "frequency": 332,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "status: in progress priority: medium target date: fourth quarter",
+      "frequency": 332,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "in progress priority: medium target date: fourth quarter of",
+      "frequency": 332,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "enquiry, the advisory committee was",
+      "frequency": 325,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "upon enquiry, the advisory committee",
+      "frequency": 323,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "upon enquiry, the advisory committee was",
+      "frequency": 323,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "priority: high target date: fourth",
+      "frequency": 320,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "high target date: fourth quarter",
+      "frequency": 320,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "priority: high target date: fourth quarter",
+      "frequency": 320,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "progress priority: high target date: fourth",
+      "frequency": 319,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "in progress priority: high target date: fourth",
+      "frequency": 319,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "progress priority: high target date: fourth quarter",
+      "frequency": 319,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "status: in progress priority: high target date: fourth",
+      "frequency": 319,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "in progress priority: high target date: fourth quarter",
+      "frequency": 319,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "status: in progress priority: high target date: fourth quarter",
+      "frequency": 319,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "high target date: fourth quarter of",
+      "frequency": 317,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "priority: high target date: fourth quarter of",
+      "frequency": 317,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "status: in progress priority: high target date: fourth quarter of",
+      "frequency": 316,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "progress priority: high target date: fourth quarter of",
+      "frequency": 316,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "in progress priority: high target date: fourth quarter of",
+      "frequency": 316,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "advisory committee was informed that",
+      "frequency": 292,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the advisory committee was informed that",
+      "frequency": 292,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "the advisory committee on administrative and budgetary",
+      "frequency": 288,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "programme budget for the biennium",
+      "frequency": 284,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "committee was informed that the",
+      "frequency": 281,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "in the proposed programme budget",
+      "frequency": 271,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "on administrative and budgetary questions",
+      "frequency": 260,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "in the proposed programme budget for",
+      "frequency": 256,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "committee on administrative and budgetary questions",
+      "frequency": 254,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "advisory committee on administrative and budgetary questions",
+      "frequency": 246,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "enquiry, the advisory committee was informed",
+      "frequency": 241,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "upon enquiry, the advisory committee was informed",
+      "frequency": 240,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "date: fourth quarter of 2010",
+      "frequency": 228,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "target date: fourth quarter of 2010",
+      "frequency": 227,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "appropriation adjustments mandates other total",
+      "frequency": 221,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "adjustments mandates other total percentage",
+      "frequency": 221,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "mandates other total percentage recosting)",
+      "frequency": 221,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "appropriation adjustments mandates other total percentage",
+      "frequency": 221,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "adjustments mandates other total percentage recosting)",
+      "frequency": 221,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "appropriation adjustments mandates other total percentage recosting)",
+      "frequency": 221,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "expenditure appropriation adjustments mandates other",
+      "frequency": 220,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "expenditure appropriation adjustments mandates other total",
+      "frequency": 220,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "expenditure appropriation adjustments mandates other total percentage",
+      "frequency": 220,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "expenditure appropriation adjustments mandates other total percentage recosting)",
+      "frequency": 220,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "enquiry, the advisory committee was informed that",
+      "frequency": 212,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "upon enquiry, the advisory committee was informed that",
+      "frequency": 211,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "resources (thousands of united states",
+      "frequency": 206,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the advisory committee on administrative and budgetary questions",
+      "frequency": 202,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "management status: in progress priority:",
+      "frequency": 200,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "date: fourth quarter of 2012",
+      "frequency": 196,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "target date: fourth quarter of 2012",
+      "frequency": 196,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "the committee was informed that",
+      "frequency": 191,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "proposed programme budget for the",
+      "frequency": 188,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "advisory committee was informed that the",
+      "frequency": 182,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "the advisory committee was informed that the",
+      "frequency": 182,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "proposed programme budget for the biennium",
+      "frequency": 178,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "expenditure and changes in reserves and",
+      "frequency": 164,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "expenditure and changes in reserves and fund",
+      "frequency": 164,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "the proposed programme budget for the",
+      "frequency": 163,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "office of programme planning, budget and",
+      "frequency": 158,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "the proposed programme budget for the biennium",
+      "frequency": 156,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "priority: medium target date: not applicable",
+      "frequency": 149,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "compared with the revised appropriation for",
+      "frequency": 148,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "the proposed regular budget resources for",
+      "frequency": 138,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "target date: fourth quarter of 2011",
+      "frequency": 137,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "enquiry, the advisory committee was informed that the",
+      "frequency": 137,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "upon enquiry, the advisory committee was informed that the",
+      "frequency": 136,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "of the proposed programme budget for",
+      "frequency": 133,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "status: implemented priority: medium target date:",
+      "frequency": 129,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "implemented priority: medium target date: not",
+      "frequency": 129,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "status: implemented priority: medium target date: not",
+      "frequency": 129,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "implemented priority: medium target date: not applicable",
+      "frequency": 129,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "status: implemented priority: medium target date: not applicable",
+      "frequency": 129,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the committee was also informed that",
+      "frequency": 127,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "excess (shortfall) of income over expenditure",
+      "frequency": 126,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "income and expenditure and changes in",
+      "frequency": 124,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "and expenditure and changes in reserves",
+      "frequency": 123,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "income and expenditure and changes in reserves",
+      "frequency": 123,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "and expenditure and changes in reserves and",
+      "frequency": 123,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "income and expenditure and changes in reserves and",
+      "frequency": 123,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "and expenditure and changes in reserves and fund",
+      "frequency": 123,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "income and expenditure and changes in reserves and fund",
+      "frequency": 123,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "high target date: fourth quarter of 2010",
+      "frequency": 122,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "(thousands of united states dollars/number of posts)",
+      "frequency": 122,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "priority: high target date: fourth quarter of 2010",
+      "frequency": 122,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "in progress priority: high target date: fourth quarter of 2010",
+      "frequency": 121,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "progress priority: high target date: fourth quarter of 2010",
+      "frequency": 121,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "per cent, compared with the revised appropriation",
+      "frequency": 120,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "30 june 2010 (thousands of united states",
+      "frequency": 120,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "june 2010 (thousands of united states dollars)",
+      "frequency": 120,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "of the advisory committee on administrative and budgetary",
+      "frequency": 120,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "30 june 2010 (thousands of united states dollars)",
+      "frequency": 120,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "(before expenditure appropriation adjustments mandates other total",
+      "frequency": 119,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "statement of income and expenditure and changes",
+      "frequency": 119,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "of income and expenditure and changes in",
+      "frequency": 119,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "(before expenditure appropriation adjustments mandates other total percentage",
+      "frequency": 119,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "statement of income and expenditure and changes in",
+      "frequency": 119,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "(before expenditure appropriation adjustments mandates other total percentage recosting)",
+      "frequency": 119,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "statement of income and expenditure and changes in reserves and",
+      "frequency": 118,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "of income and expenditure and changes in reserves and fund",
+      "frequency": 118,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "of income and expenditure and changes in reserves",
+      "frequency": 118,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "statement of income and expenditure and changes in reserves",
+      "frequency": 118,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "of income and expenditure and changes in reserves and",
+      "frequency": 118,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "as at 30 june 2010 (thousands of united states dollars)",
+      "frequency": 117,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "as at 30 june 2010 (thousands of",
+      "frequency": 117,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "at 30 june 2010 (thousands of united",
+      "frequency": 117,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "as at 30 june 2010 (thousands of united",
+      "frequency": 117,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "at 30 june 2010 (thousands of united states",
+      "frequency": 117,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "as at 30 june 2010 (thousands of united states",
+      "frequency": 117,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "at 30 june 2010 (thousands of united states dollars)",
+      "frequency": 117,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "cent, compared with the revised appropriation for",
+      "frequency": 114,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "expenditure and changes in reserves and fund balances",
+      "frequency": 114,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "per cent, compared with the revised appropriation for",
+      "frequency": 114,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "in progress priority: medium target date: fourth quarter of 2012",
+      "frequency": 113,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "medium target date: fourth quarter of 2012",
+      "frequency": 113,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "priority: medium target date: fourth quarter of 2012",
+      "frequency": 113,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "progress priority: medium target date: fourth quarter of 2012",
+      "frequency": 113,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "office of programme planning, budget and accounts",
+      "frequency": 112,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "(before expenditure appropriation adjustments mandates other total percentage recosting) financial",
+      "frequency": 108,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "expenditure appropriation adjustments mandates other total percentage recosting) financial resources",
+      "frequency": 108,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "appropriation adjustments mandates other total percentage recosting) financial resources by",
+      "frequency": 108,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "adjustments mandates other total percentage recosting) financial resources by main",
+      "frequency": 108,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "mandates other total percentage recosting) financial resources by main category",
+      "frequency": 108,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "other total percentage recosting) financial resources by main category of",
+      "frequency": 108,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "total percentage recosting) financial resources by main category of expenditure",
+      "frequency": 108,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "management status: in progress priority: medium target",
+      "frequency": 108,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "adjustments mandates other total percentage recosting) financial",
+      "frequency": 108,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "mandates other total percentage recosting) financial resources",
+      "frequency": 108,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "other total percentage recosting) financial resources by",
+      "frequency": 108,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "total percentage recosting) financial resources by main",
+      "frequency": 108,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "percentage recosting) financial resources by main category",
+      "frequency": 108,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "recosting) financial resources by main category of",
+      "frequency": 108,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "financial resources by main category of expenditure",
+      "frequency": 108,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "management status: in progress priority: medium target date:",
+      "frequency": 108,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "appropriation adjustments mandates other total percentage recosting) financial",
+      "frequency": 108,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "adjustments mandates other total percentage recosting) financial resources",
+      "frequency": 108,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "mandates other total percentage recosting) financial resources by",
+      "frequency": 108,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "other total percentage recosting) financial resources by main",
+      "frequency": 108,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "total percentage recosting) financial resources by main category",
+      "frequency": 108,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "percentage recosting) financial resources by main category of",
+      "frequency": 108,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "recosting) financial resources by main category of expenditure",
+      "frequency": 108,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "expenditure appropriation adjustments mandates other total percentage recosting) financial",
+      "frequency": 108,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "appropriation adjustments mandates other total percentage recosting) financial resources",
+      "frequency": 108,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "adjustments mandates other total percentage recosting) financial resources by",
+      "frequency": 108,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "mandates other total percentage recosting) financial resources by main",
+      "frequency": 108,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "other total percentage recosting) financial resources by main category",
+      "frequency": 108,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "total percentage recosting) financial resources by main category of",
+      "frequency": 108,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "percentage recosting) financial resources by main category of expenditure",
+      "frequency": 108,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "percentage recosting) financial resources by main category of expenditure post",
+      "frequency": 106,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "of united states dollars/number of posts) changes",
+      "frequency": 106,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "resources by main category of expenditure post",
+      "frequency": 106,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "(thousands of united states dollars/number of posts) changes",
+      "frequency": 106,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "financial resources by main category of expenditure post",
+      "frequency": 106,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "recosting) financial resources by main category of expenditure post",
+      "frequency": 106,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "in progress priority: medium target date: fourth quarter of 2010",
+      "frequency": 104,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "medium target date: fourth quarter of 2010",
+      "frequency": 104,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "post resources by category professional and higher",
+      "frequency": 104,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "priority: medium target date: fourth quarter of 2010",
+      "frequency": 104,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "progress priority: medium target date: fourth quarter of 2010",
+      "frequency": 104,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "the office of programme planning, budget and",
+      "frequency": 103,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "(before recosting) (number of posts/thousands of united",
+      "frequency": 102,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "recosting) (number of posts/thousands of united states",
+      "frequency": 102,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "(number of posts/thousands of united states dollars)",
+      "frequency": 102,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "(before recosting) (number of posts/thousands of united states",
+      "frequency": 102,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "recosting) (number of posts/thousands of united states dollars)",
+      "frequency": 102,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "(before recosting) (number of posts/thousands of united states dollars)",
+      "frequency": 102,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "expenditure and changes in reserves and fund balances for",
+      "frequency": 100,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "expenditure and changes in reserves and fund balances for the",
+      "frequency": 97,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "agreed with the board’s recommendation that it (a)",
+      "frequency": 95,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "regular budget resources requested by the secretary-general for",
+      "frequency": 93,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "management status: in progress priority: high target date:",
+      "frequency": 91,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "of the advisory committee on administrative and budgetary questions",
+      "frequency": 91,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "status: implemented priority: high target date: not applicable",
+      "frequency": 90,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "of financial and post resources (thousands of united states dollars/number",
+      "frequency": 88,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "financial and post resources (thousands of united states dollars/number of",
+      "frequency": 88,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "and post resources (thousands of united states dollars/number of posts)",
+      "frequency": 88,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "of financial and post resources (thousands of united",
+      "frequency": 88,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "financial and post resources (thousands of united states",
+      "frequency": 88,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "and post resources (thousands of united states dollars/number",
+      "frequency": 88,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "post resources (thousands of united states dollars/number of",
+      "frequency": 88,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "resources (thousands of united states dollars/number of posts)",
+      "frequency": 88,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "of financial and post resources (thousands of united states",
+      "frequency": 88,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "financial and post resources (thousands of united states dollars/number",
+      "frequency": 88,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "and post resources (thousands of united states dollars/number of",
+      "frequency": 88,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "post resources (thousands of united states dollars/number of posts)",
+      "frequency": 88,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "evolution of financial and post resources (thousands of united states",
+      "frequency": 87,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "post resources (thousands of united states dollars/number of posts) changes",
+      "frequency": 87,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "evolution of financial and post resources (thousands of",
+      "frequency": 87,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "budget resources requested by the secretary-general for section",
+      "frequency": 87,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "evolution of financial and post resources (thousands of united",
+      "frequency": 87,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "resources (thousands of united states dollars/number of posts) changes",
+      "frequency": 87,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "regular budget resources requested by the secretary-general for section",
+      "frequency": 87,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "in progress priority: high target date: fourth quarter of 2012",
+      "frequency": 83,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "priority: high target date: fourth quarter of 2012",
+      "frequency": 83,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "progress priority: high target date: fourth quarter of 2012",
+      "frequency": 83,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "services status: in progress priority: high target date:",
+      "frequency": 77,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "in the proposed programme budget for the biennium",
+      "frequency": 77,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "upon enquiry, the advisory committee was provided with",
+      "frequency": 77,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "technical expanded (before expenditure appropriation adjustments mandates other total percentage",
+      "frequency": 76,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "expanded (before expenditure appropriation adjustments mandates other total percentage recosting)",
+      "frequency": 76,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "department responsible: division for management services status: in progress priority:",
+      "frequency": 76,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "technical expanded (before expenditure appropriation adjustments mandates other",
+      "frequency": 76,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "expanded (before expenditure appropriation adjustments mandates other total",
+      "frequency": 76,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "department responsible: division for management services status: in",
+      "frequency": 76,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "responsible: division for management services status: in progress",
+      "frequency": 76,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "division for management services status: in progress priority:",
+      "frequency": 76,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "technical expanded (before expenditure appropriation adjustments mandates other total",
+      "frequency": 76,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "expanded (before expenditure appropriation adjustments mandates other total percentage",
+      "frequency": 76,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "department responsible: division for management services status: in progress",
+      "frequency": 76,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "responsible: division for management services status: in progress priority:",
+      "frequency": 76,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "income and expenditure and changes in reserves and fund balances",
+      "frequency": 74,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "and expenditure and changes in reserves and fund balances",
+      "frequency": 74,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "management status: in progress priority: medium target date: fourth quarter",
+      "frequency": 73,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "management status: in progress priority: medium target date: fourth",
+      "frequency": 73,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "in progress priority: high target date: fourth quarter of 2011",
+      "frequency": 71,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "progress priority: high target date: fourth quarter of 2011",
+      "frequency": 71,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "summarizes the regular budget posts approved for the biennium",
+      "frequency": 71,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "status: in progress priority: high target date: first quarter of",
+      "frequency": 68,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "status: in progress priority: high target date: first quarter",
+      "frequency": 68,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "in progress priority: high target date: first quarter of",
+      "frequency": 68,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "in progress priority: medium target date: fourth quarter of 2011",
+      "frequency": 65,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "progress priority: medium target date: fourth quarter of 2011",
+      "frequency": 65,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "department responsible: division of financial and administrative management status:",
+      "frequency": 65,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "services status: in progress priority: high target date: fourth quarter",
+      "frequency": 63,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "and expenditure and changes in reserves and fund balances for",
+      "frequency": 63,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "services status: in progress priority: high target date: fourth",
+      "frequency": 63,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "department responsible: division of financial and administrative management status: in",
+      "frequency": 62,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "responsible: division of financial and administrative management status: in progress",
+      "frequency": 62,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "division of financial and administrative management status: in progress priority:",
+      "frequency": 62,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "agreed with the board’s recommendation that it ensure that",
+      "frequency": 62,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "responsible: division of financial and administrative management status: in",
+      "frequency": 62,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "division of financial and administrative management status: in progress",
+      "frequency": 62,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "of financial and administrative management status: in progress priority:",
+      "frequency": 62,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "services status: in progress priority: medium target date: fourth quarter",
+      "frequency": 60,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "services status: in progress priority: medium target date: fourth",
+      "frequency": 60,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "the regular budget resources requested by the secretary-general for",
+      "frequency": 60,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "management status: in progress priority: high target date: fourth quarter",
+      "frequency": 58,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "no change in the resource level compared with the appropriation",
+      "frequency": 57,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "change in the resource level compared with the appropriation for",
+      "frequency": 57,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "the regular budget resources requested by the secretary-general for section",
+      "frequency": 54,
+      "ngram_size": "10"
+    }
+  ],
+  "procedural": [
+    {
+      "phrase": "official records of the",
+      "frequency": 1139,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "report of the secretary-general",
+      "frequency": 952,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "economic and social council",
+      "frequency": 946,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "by the general assembly",
+      "frequency": 928,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "of the general assembly,",
+      "frequency": 789,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "of the general assembly",
+      "frequency": 771,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "to the general assembly",
+      "frequency": 635,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "the advisory committee was",
+      "frequency": 622,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "report of the secretary-general on",
+      "frequency": 622,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the general assembly in",
+      "frequency": 570,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "official records of the general",
+      "frequency": 567,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "records of the general assembly,",
+      "frequency": 544,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "official records of the general assembly,",
+      "frequency": 526,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "the economic and social council",
+      "frequency": 499,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "report of the secretary-general on the",
+      "frequency": 464,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "of the committee on",
+      "frequency": 423,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "the general assembly at",
+      "frequency": 415,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "by the general assembly in",
+      "frequency": 415,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "advisory committee was informed",
+      "frequency": 384,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "the advisory committee was informed",
+      "frequency": 383,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "committee on administrative and",
+      "frequency": 372,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "the advisory committee on",
+      "frequency": 371,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "the general assembly and",
+      "frequency": 364,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "advisory committee on administrative",
+      "frequency": 363,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "general assembly at its",
+      "frequency": 358,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "advisory committee on administrative and",
+      "frequency": 354,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "of general assembly resolution",
+      "frequency": 345,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "session of the general",
+      "frequency": 342,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "the report of the secretary-general",
+      "frequency": 333,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the general assembly at its",
+      "frequency": 331,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the general assembly in its",
+      "frequency": 326,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the advisory committee on administrative",
+      "frequency": 309,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the economic and social council,",
+      "frequency": 309,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the advisory committee on administrative and",
+      "frequency": 303,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "of the general assembly, thirty-first",
+      "frequency": 301,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "records of the general assembly, thirty-first",
+      "frequency": 300,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "official records of the general assembly, thirty-first",
+      "frequency": 299,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "by the general assembly in its",
+      "frequency": 282,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "general assembly in its resolution",
+      "frequency": 277,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the general assembly in its resolution",
+      "frequency": 275,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "by the general assembly in its resolution",
+      "frequency": 248,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "report of the secretary-general on the work",
+      "frequency": 242,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "report of the secretary-general on the work of",
+      "frequency": 242,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "report of the secretary-general on the work of the",
+      "frequency": 240,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "to the general assembly at",
+      "frequency": 237,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "of the economic and social council,",
+      "frequency": 228,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "official records of the economic",
+      "frequency": 216,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "official records of the economic and",
+      "frequency": 215,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "official records of the economic and social",
+      "frequency": 214,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "report of the secretary-general on the work of the organization",
+      "frequency": 213,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "see official records of the",
+      "frequency": 210,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "in accordance with general assembly",
+      "frequency": 201,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the report of the secretary-general on",
+      "frequency": 198,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "records of the economic and social council,",
+      "frequency": 197,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "official records of the economic and social council,",
+      "frequency": 194,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the general assembly and the",
+      "frequency": 189,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "to the general assembly at its",
+      "frequency": 180,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "of the economic and social council",
+      "frequency": 179,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "in accordance with general assembly resolution",
+      "frequency": 169,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "committee recommends the approval of the",
+      "frequency": 153,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "the advisory committee recommends the approval",
+      "frequency": 151,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "advisory committee recommends the approval of",
+      "frequency": 151,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "the advisory committee recommends the approval of",
+      "frequency": 151,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "advisory committee recommends the approval of the",
+      "frequency": 150,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "the advisory committee recommends the approval of the",
+      "frequency": 150,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "department for general assembly and conference",
+      "frequency": 142,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "general assembly and economic and social",
+      "frequency": 136,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "assembly and economic and social council",
+      "frequency": 135,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "general assembly and economic and social council",
+      "frequency": 134,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "of the advisory committee on administrative",
+      "frequency": 132,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "and economic and social council affairs",
+      "frequency": 127,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "of the advisory committee on administrative and",
+      "frequency": 127,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "assembly and economic and social council affairs",
+      "frequency": 127,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "general assembly and economic and social council affairs",
+      "frequency": 126,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the advisory committee was provided with",
+      "frequency": 125,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "of the general assembly, thirty-first ses",
+      "frequency": 125,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "records of the general assembly, thirty-first ses",
+      "frequency": 125,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "official records of the general assembly, thirty-first ses",
+      "frequency": 125,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "and economic and social council affairs and",
+      "frequency": 121,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "assembly and economic and social council affairs and",
+      "frequency": 121,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "general assembly and economic and social council affairs and",
+      "frequency": 120,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "economic and social council affairs and conference",
+      "frequency": 119,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "and economic and social council affairs and conference",
+      "frequency": 119,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "assembly and economic and social council affairs and conference",
+      "frequency": 119,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "general assembly and economic and social council affairs and conference",
+      "frequency": 118,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "the department for general assembly and conference",
+      "frequency": 111,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "assembly and economic and social council affairs and conference management",
+      "frequency": 108,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "the report of the secretary-general on the",
+      "frequency": 108,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "economic and social council affairs and conference management",
+      "frequency": 108,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "and economic and social council affairs and conference management",
+      "frequency": 108,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "committee on the peaceful uses of outer",
+      "frequency": 105,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "department for general assembly and conference management",
+      "frequency": 102,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "official records of the general assembly, thirty-first session,",
+      "frequency": 92,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the committee on the peaceful uses of outer",
+      "frequency": 86,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "section 2, general assembly and economic and social council affairs",
+      "frequency": 83,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "2, general assembly and economic and social council affairs and",
+      "frequency": 83,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "section 2, general assembly and economic and social",
+      "frequency": 83,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "2, general assembly and economic and social council",
+      "frequency": 83,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the adoption of the resolution gives rise to",
+      "frequency": 83,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "section 2, general assembly and economic and social council",
+      "frequency": 83,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "2, general assembly and economic and social council affairs",
+      "frequency": 83,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "the department for general assembly and conference management",
+      "frequency": 79,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "records of the general assembly, thirty-first ses sion,",
+      "frequency": 79,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "official records of the general assembly, thirty-first ses sion,",
+      "frequency": 79,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "adoption of the resolution gives rise to additional",
+      "frequency": 78,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the adoption of the resolution gives rise to additional",
+      "frequency": 78,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "resolutions and decisions resolution date of organ ordecision",
+      "frequency": 77,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "responded to questions raised by the committee during its",
+      "frequency": 71,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "responded to questions raised by the committee during its consideration",
+      "frequency": 69,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "to questions raised by the committee during its consideration",
+      "frequency": 69,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "raised by the committee during its consideration of the",
+      "frequency": 69,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "to questions raised by the committee during its consideration of",
+      "frequency": 68,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "questions raised by the committee during its consideration of the",
+      "frequency": 68,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "questions raised by the committee during its consideration of",
+      "frequency": 68,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "1976 official records of the general assembly, thirty-first session,",
+      "frequency": 66,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "will be provided before the next session of the special",
+      "frequency": 61,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "will be provided before the next session of the",
+      "frequency": 61,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "be provided before the next session of the special",
+      "frequency": 61,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "see official records of the economic and social council,",
+      "frequency": 60,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "an informal briefing will be provided before the next session",
+      "frequency": 59,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "informal briefing will be provided before the next session of",
+      "frequency": 59,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "briefing will be provided before the next session of the",
+      "frequency": 59,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "be provided before the next session of the special committee.",
+      "frequency": 59,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "official records of the economic and social council, sixty-first session,",
+      "frequency": 57,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "official records of the general assembly, thirty-first ses sion, annexes,",
+      "frequency": 53,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "records of the economic and social council, sixty-first session, plenary",
+      "frequency": 53,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "raised by the committee during its consideration of the programme.",
+      "frequency": 52,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "of the economic and social council, sixty-first session, plenary meetings,",
+      "frequency": 52,
+      "ngram_size": "10"
+    }
+  ],
+  "ceremonial": [
+    {
+      "phrase": "on behalf of the",
+      "frequency": 540,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "i would like to",
+      "frequency": 338,
+      "ngram_size": "4"
+    }
+  ],
+  "entity_names": [
+    {
+      "phrase": "the department of peacekeeping",
+      "frequency": 716,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "department of peacekeeping operations",
+      "frequency": 612,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "of the department of",
+      "frequency": 576,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "the department of peacekeeping operations",
+      "frequency": 533,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "nations high commissioner for",
+      "frequency": 522,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "the department of field",
+      "frequency": 493,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "office of the united nations",
+      "frequency": 481,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "united nations high commissioner for",
+      "frequency": 421,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "department of field support",
+      "frequency": 407,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "latin america and the caribbean",
+      "frequency": 400,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the united nations high commissioner for",
+      "frequency": 386,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "department of economic and",
+      "frequency": 376,
+      "ngram_size": "4"
+    },
+    {
+      "phrase": "department of economic and social",
+      "frequency": 365,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "united kingdom of great britain",
+      "frequency": 353,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the department of field support",
+      "frequency": 343,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "united kingdom of great britain and",
+      "frequency": 339,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "united kingdom of great britain and northern",
+      "frequency": 328,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "office of the united nations high",
+      "frequency": 309,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "of the united nations high commissioner for",
+      "frequency": 305,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "office of the united nations high commissioner",
+      "frequency": 286,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "office of the united nations high commissioner for",
+      "frequency": 281,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the office of the united nations",
+      "frequency": 270,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "nations high commissioner for refugees",
+      "frequency": 266,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the department of economic and",
+      "frequency": 254,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "the department of economic and social",
+      "frequency": 249,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "in latin america and the caribbean",
+      "frequency": 224,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "department of economic and social affairs",
+      "frequency": 217,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "the office of the united nations high",
+      "frequency": 202,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "the office of the united nations high commissioner",
+      "frequency": 192,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the office of the united nations high commissioner for",
+      "frequency": 192,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "of the department of peacekeeping",
+      "frequency": 190,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "department of peacekeeping operations and",
+      "frequency": 189,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "nations high commissioner for human",
+      "frequency": 183,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "united nations high commissioner for human",
+      "frequency": 175,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "the department of peacekeeping operations and",
+      "frequency": 175,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "united nations high commissioner for refugees",
+      "frequency": 174,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "the united nations high commissioner for human",
+      "frequency": 169,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "development in latin america and the caribbean",
+      "frequency": 167,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "the department of economic and social affairs",
+      "frequency": 154,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "social development in latin america and the caribbean",
+      "frequency": 154,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "economic and social development in latin america and the caribbean",
+      "frequency": 152,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "developing countries and small island developing",
+      "frequency": 152,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "and social development in latin america and the caribbean",
+      "frequency": 152,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "the united nations high commissioner for refugees",
+      "frequency": 151,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "united kingdom of great britain and northern ireland,",
+      "frequency": 151,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "landlocked developing countries and small island",
+      "frequency": 148,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "developed countries, landlocked developing countries and",
+      "frequency": 147,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "landlocked developing countries and small island developing",
+      "frequency": 147,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "least developed countries, landlocked developing countries",
+      "frequency": 143,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "least developed countries, landlocked developing countries and",
+      "frequency": 143,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "of the united nations high commissioner for human",
+      "frequency": 143,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "countries, landlocked developing countries and small",
+      "frequency": 142,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "developed countries, landlocked developing countries and small",
+      "frequency": 142,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "countries, landlocked developing countries and small island",
+      "frequency": 142,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "developed countries, landlocked developing countries and small island",
+      "frequency": 142,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "countries, landlocked developing countries and small island developing",
+      "frequency": 141,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "developed countries, landlocked developing countries and small island developing",
+      "frequency": 141,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "least developed countries, landlocked developing countries and small",
+      "frequency": 139,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "least developed countries, landlocked developing countries and small island",
+      "frequency": 139,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "least developed countries, landlocked developing countries and small island developing",
+      "frequency": 138,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "the united kingdom of great britain",
+      "frequency": 135,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "nations high commissioner for human rights",
+      "frequency": 133,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "the united kingdom of great britain and",
+      "frequency": 131,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "united kingdom of great britain and northern ireland",
+      "frequency": 130,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "office of the united nations high commissioner for human",
+      "frequency": 130,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "united nations high commissioner for human rights",
+      "frequency": 128,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "the united nations high commissioner for human rights",
+      "frequency": 127,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the united kingdom of great britain and northern",
+      "frequency": 126,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "department of peacekeeping operations and the",
+      "frequency": 124,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "the department of peacekeeping operations and the",
+      "frequency": 122,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "of the united nations high commissioner for refugees",
+      "frequency": 113,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "office of the united nations high commissioner for refugees",
+      "frequency": 107,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "of the united nations high commissioner for human rights",
+      "frequency": 106,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "united kingdom of great britain and northern ireland, united",
+      "frequency": 105,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "office of the united nations high commissioner for human rights",
+      "frequency": 96,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "the office of the united nations high commissioner for human",
+      "frequency": 95,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "department of peacekeeping operations and the department of",
+      "frequency": 91,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "landlocked developing countries and small island developing states",
+      "frequency": 90,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the department of peacekeeping operations and the department",
+      "frequency": 90,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the department of peacekeeping operations and the department of",
+      "frequency": 90,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "developed countries, landlocked developing countries and small island developing states",
+      "frequency": 87,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "countries, landlocked developing countries and small island developing states",
+      "frequency": 87,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "the least developed countries, landlocked developing countries and",
+      "frequency": 83,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the least developed countries, landlocked developing countries and small island",
+      "frequency": 81,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "the least developed countries, landlocked developing countries and small",
+      "frequency": 81,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "the united kingdom of great britain and northern ireland",
+      "frequency": 79,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "economic commission for latin america and the caribbean",
+      "frequency": 77,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the office of the united nations high commissioner for refugees",
+      "frequency": 75,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "department of peacekeeping operations and the department of field",
+      "frequency": 73,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "the department of peacekeeping operations and the department of field",
+      "frequency": 72,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "united kingdom of great britain and northern ireland, united republic",
+      "frequency": 60,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "office of the high representative for the least developed countries,",
+      "frequency": 58,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "of the high representative for the least developed countries, landlocked",
+      "frequency": 58,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "for the least developed countries, landlocked developing countries and small",
+      "frequency": 58,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "the high representative for the least developed countries, landlocked developing",
+      "frequency": 57,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "high representative for the least developed countries, landlocked developing countries",
+      "frequency": 56,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "representative for the least developed countries, landlocked developing countries and",
+      "frequency": 56,
+      "ngram_size": "10"
+    }
+  ],
+  "metadata": [
+    {
+      "phrase": "as reported in volume i",
+      "frequency": 217,
+      "ngram_size": "5"
+    },
+    {
+      "phrase": "nations as reported in volume i",
+      "frequency": 210,
+      "ngram_size": "6"
+    },
+    {
+      "phrase": "united nations as reported in volume i",
+      "frequency": 210,
+      "ngram_size": "7"
+    },
+    {
+      "phrase": "the united nations as reported in volume i",
+      "frequency": 210,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "of the united nations as reported in volume i",
+      "frequency": 206,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "of the united nations as reported in volume i notes",
+      "frequency": 87,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "the united nations as reported in volume i notes to",
+      "frequency": 87,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "united nations as reported in volume i notes to the",
+      "frequency": 87,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "united nations as reported in volume i notes",
+      "frequency": 87,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "nations as reported in volume i notes to",
+      "frequency": 87,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "as reported in volume i notes to the",
+      "frequency": 87,
+      "ngram_size": "8"
+    },
+    {
+      "phrase": "the united nations as reported in volume i notes",
+      "frequency": 87,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "united nations as reported in volume i notes to",
+      "frequency": 87,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "nations as reported in volume i notes to the",
+      "frequency": 87,
+      "ngram_size": "9"
+    },
+    {
+      "phrase": "section 24, human rights other staff costs (general temporary assistance)",
+      "frequency": 67,
+      "ngram_size": "10"
+    },
+    {
+      "phrase": "section 24, human rights other staff costs (general temporary",
+      "frequency": 67,
+      "ngram_size": "9"
+    }
+  ]
+}
