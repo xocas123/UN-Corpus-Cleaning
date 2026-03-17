@@ -39,16 +39,21 @@ class FrequencyAnalyzer:
         print(f"Loading data from {self.csv_path}...")
 
         if sample_size:
-            # Load a random sample
-            print(f"Sampling {sample_size} rows...")
-            self.df = pd.read_csv(self.csv_path, nrows=sample_size)
+            # Load full CSV then draw a stratified random sample (avoids
+            # temporal bias that sequential nrows would introduce)
+            print(f"Loading full CSV for random sampling ({sample_size} rows)...")
+            self.df = pd.read_csv(self.csv_path, low_memory=False)
+            self.df = self.df[self.df[self.text_column].notna()]
+            self.df = self.df.sample(
+                n=min(sample_size, len(self.df)), random_state=42
+            )
+            print(f"Sampled {len(self.df)} documents (random, seed=42)")
         else:
             print("Loading full dataset (this may take a while)...")
-            self.df = pd.read_csv(self.csv_path)
-
-        # Remove NaN values
-        self.df = self.df[self.df[self.text_column].notna()]
-        print(f"Loaded {len(self.df)} documents")
+            self.df = pd.read_csv(self.csv_path, low_memory=False)
+            # Remove NaN values
+            self.df = self.df[self.df[self.text_column].notna()]
+            print(f"Loaded {len(self.df)} documents")
 
     def preprocess_text(self, text: str) -> str:
         """

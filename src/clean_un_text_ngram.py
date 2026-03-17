@@ -6,6 +6,7 @@ Combines regex patterns with data-driven n-gram removal
 import re
 import json
 import sys
+import unicodedata
 from pathlib import Path
 from typing import Dict, List, Tuple
 import pandas as pd
@@ -138,6 +139,85 @@ class EnhancedUNTextCleaner:
 
         return cleaned, {"ngrams_removed": total_removed, "by_category": removals}
 
+    def fix_ocr_encoding(self, text: str) -> Tuple[str, Dict]:
+        """
+        Step 0: Fix OCR errors and encoding artifacts before boilerplate removal.
+
+        Applies a sequence of targeted fixes:
+          1. Unicode NFC normalization
+          2. Control/replacement character removal
+          3. Common mojibake pairs (Windows-1252 read as Latin-1)
+          4. Tilde/asterisk as OCR letter substitutions within words
+          5. Digit-as-letter substitutions within words
+          6. Collapse runs of 4+ identical non-ASCII characters
+          7. Insert missing space at camelCase OCR merges
+
+        Returns (fixed_text, stats_dict).
+        """
+        fixes = {}
+        t = text
+
+        # 1. Unicode NFC normalization
+        t_norm = unicodedata.normalize('NFC', t)
+        if t_norm != t:
+            fixes['unicode_normalized'] = True
+        t = t_norm
+
+        # 2. Remove Unicode replacement char and control characters
+        before = len(t)
+        t = re.sub(r'[\ufffd\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', t)
+        removed = before - len(t)
+        if removed:
+            fixes['replacement_chars_removed'] = removed
+
+        # 3. Common mojibake pairs (Windows-1252 mis-decoded as Latin-1/UTF-8)
+        mojibake_map = [
+            ('â€™', '\u2019'),  # right single quote
+            ('â€œ', '\u201c'),  # left double quote
+            ('â€\x9d', '\u201d'),  # right double quote
+            ('â€"', '\u2014'),  # em dash
+            ('â€"', '\u2013'),  # en dash
+            ('Ã©', 'é'), ('Ã¨', 'è'), ('Ã ', 'à'),
+            ('Ã¯', 'ï'), ('Ã®', 'î'), ('Ã´', 'ô'),
+            ('Ã»', 'û'), ('Ã§', 'ç'),
+        ]
+        moji_count = 0
+        for bad, good in mojibake_map:
+            if bad in t:
+                moji_count += t.count(bad)
+                t = t.replace(bad, good)
+        if moji_count:
+            fixes['mojibake_fixed'] = moji_count
+
+        # 4. Tilde/asterisk as OCR letter substitutions within words
+        #    e.g. Pr~fessor -> Professor, f*om -> from
+        ocr_sym = len(re.findall(r'\b\w+[~*]\w+\b', t))
+        if ocr_sym:
+            t = re.sub(r'(\b\w+)[~](\w+\b)', r'\1o\2', t)
+            t = re.sub(r'(\b\w+)[*](\w+\b)', r'\1r\2', t)
+            fixes['ocr_symbol_fixed'] = ocr_sym
+
+        # 5. Digit-as-letter substitutions within words
+        #    e.g. adress6e -> adressée, c0ntent -> content, rea1ly -> really
+        digit_ocr = len(re.findall(r'[a-z]\d[a-z]', t))
+        if digit_ocr:
+            t = re.sub(r'([a-z])6([ea])', r'\1é\2', t)
+            t = re.sub(r'([a-z])0([a-z])', r'\1o\2', t)
+            t = re.sub(r'([a-z])1([a-z])', r'\1l\2', t)
+            fixes['ocr_digit_letter_fixed'] = digit_ocr
+
+        # 6. Collapse runs of 4+ identical non-ASCII chars
+        before = len(t)
+        t = re.sub(r'([^\x00-\x7F])\1{3,}', r'\1', t)
+        if len(t) != before:
+            fixes['repeated_nonascii_collapsed'] = before - len(t)
+
+        # 7. Insert missing space at obvious camelCase OCR word merges
+        #    Requires 3+ lowercase chars before an uppercase that starts 3+ lowercase
+        t = re.sub(r'(?<=[a-z]{3})(?=[A-Z][a-z]{2})', ' ', t)
+
+        return t, {"ocr_fixes": fixes, "any_fixed": bool(fixes)}
+
     def clean_text(self, text: str,
                    use_ngrams: bool = True,
                    use_patterns: bool = True,
@@ -161,9 +241,14 @@ class EnhancedUNTextCleaner:
         cleaned = text
         stats = {
             "original_length": original_length,
+            "ocr_stats": {},
             "ngram_stats": {},
             "pattern_stats": {}
         }
+
+        # Step 0: Fix OCR/encoding artifacts
+        cleaned, ocr_stats = self.fix_ocr_encoding(cleaned)
+        stats["ocr_stats"] = ocr_stats
 
         # Step 1: Remove n-gram boilerplate (high-frequency exact matches)
         if use_ngrams and self.ngram_boilerplate:
@@ -209,7 +294,9 @@ class EnhancedUNTextCleaner:
                   text_column: str = 'Text',
                   sample_size: int = None,
                   verbose: bool = False,
-                  bloc_json_output: str = None):
+                  bloc_json_output: str = None,
+                  flag_column: str = None,
+                  flag_valid_value: int = 1):
         """
         Clean text in CSV file with n-gram + pattern removal
 
@@ -261,9 +348,16 @@ class EnhancedUNTextCleaner:
 
             print(f"Cleaning '{text_column}' column with N-GRAM + PATTERN removal...")
 
+            # Validate flag column
+            use_flag = flag_column and flag_column in df.columns
+            if flag_column and not use_flag:
+                print(f"[WARN] flag_column '{flag_column}' not found in CSV — skipping pre-filter")
+
             # Track statistics
             total_stats = {
                 "total_rows": len(df),
+                "skipped_invalid_rows": 0,
+                "total_ocr_fixed_rows": 0,
                 "total_original_chars": 0,
                 "total_cleaned_chars": 0,
                 "avg_reduction_percent": 0,
@@ -273,27 +367,45 @@ class EnhancedUNTextCleaner:
 
             # Clean text column
             cleaned_texts = []
+            flag_cleaned_col = []
             reductions = []
 
-            for idx, text in enumerate(df[text_column]):
+            for idx, row in df.iterrows():
+                text = row[text_column]
+
+                # Pre-filter: skip invalid rows
+                if use_flag:
+                    flag_val = row[flag_column]
+                    if pd.isna(flag_val) or int(flag_val) != flag_valid_value:
+                        cleaned_texts.append(str(text) if pd.notna(text) else "")
+                        flag_cleaned_col.append("skipped_invalid")
+                        total_stats["skipped_invalid_rows"] += 1
+                        continue
+
                 if pd.isna(text):
                     cleaned_texts.append("")
+                    flag_cleaned_col.append("skipped_empty")
                     continue
 
                 cleaned, stats = self.clean_text(str(text), verbose=False)
                 cleaned_texts.append(cleaned)
+                flag_cleaned_col.append("cleaned")
 
                 total_stats["total_original_chars"] += stats["original_length"]
                 total_stats["total_cleaned_chars"] += stats["cleaned_length"]
                 total_stats["total_ngrams_removed"] += stats.get("ngram_stats", {}).get("ngrams_removed", 0)
                 total_stats["total_patterns_removed"] += sum(stats.get("pattern_stats", {}).values())
+                if stats.get("ocr_stats", {}).get("any_fixed"):
+                    total_stats["total_ocr_fixed_rows"] += 1
                 reductions.append(stats["reduction_percent"])
 
-                if verbose and (idx + 1) % 100 == 0:
-                    print(f"  Processed {idx + 1}/{len(df)} rows")
+                if verbose and (len(cleaned_texts)) % 100 == 0:
+                    print(f"  Processed {len(cleaned_texts)}/{len(df)} rows")
 
-            # Add cleaned text to dataframe
+            # Add cleaned text and cleaning status to dataframe
             df[f'{text_column}_cleaned_ngram'] = cleaned_texts
+            if use_flag:
+                df['Flag_Cleaned'] = flag_cleaned_col
 
             # Save output
             print(f"Writing output to: {output_csv}")

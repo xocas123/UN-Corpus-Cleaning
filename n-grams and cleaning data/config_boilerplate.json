@@ -89,7 +89,44 @@
       "patterns": [
         "\\((?:A|S|E)/[A-Z0-9/\\.]+\\)",
         "\\(see\\s+(?:A|S|E)/[A-Z0-9/\\.]+\\)",
-        "\\[.*?document.*?\\]"
+        "\\[.*?document.*?\\]",
+        "\\(\\s*para(?:graph|\\.)?s?\\.?\\s*\\d+(?:\\s*(?:and|to|\\-|,)\\s*\\d+)*\\s*(?:above|below|thereof)?\\s*\\)"
+      ]
+    },
+    "speaker_attribution_lines": {
+      "enabled": true,
+      "description": "Speaker identification headers before speech text, e.g. 'Mr. Smith (France):'",
+      "patterns": [
+        "^\\s*(?:Mr\\.|Mrs\\.|Ms\\.|Dr\\.|Prof\\.|His\\s+Excellency|Her\\s+Excellency|The\\s+(?:President|Chair(?:person)?|Secretary(?:-General)?|Rapporteur|Observer|Representative))\\s+[A-Z][A-Za-z\\-']{1,30}(?:\\s+[A-Z][A-Za-z\\-']{1,30}){0,4}\\s*(?:\\([^)]{2,60}\\))?\\s*:\\s*$",
+        "^\\s*(?:The\\s+)?(?:PRESIDENT|CHAIR|CHAIRPERSON|VICE-PRESIDENT|SECRETARY-GENERAL|RAPPORTEUR|REPRESENTATIVE|OBSERVER)(?:\\s+\\([^)]{2,60}\\))?\\s*:\\s*$"
+      ]
+    },
+    "document_bracket_refs": {
+      "enabled": true,
+      "description": "Bracket-style UN document reference codes like [A/C.1/69/PV.13]",
+      "patterns": [
+        "\\[(?:A|S|E|C|ST|DP)(?:\\/[A-Z0-9\\.\\-]+){1,6}\\]",
+        "\\b(?:A|S|E|C)\\/(?:RES|DEC|INF|AC|C|CONF|HRC|CN)\\.?\\s*\\d+[A-Z]?(?:\\/[A-Z0-9\\.]+){0,4}\\b"
+      ]
+    },
+    "cross_reference_parentheticals": {
+      "enabled": true,
+      "description": "Inline cross-references and language attribution parentheticals",
+      "patterns": [
+        "\\(\\s*see\\s+(?:para(?:graph|\\.)?s?\\.?|ann?ex(?:es)?|appendix|figure|table|section|chapter)\\s+[A-Z0-9][A-Za-z0-9\\.\\-\\s]{0,30}\\)",
+        "\\(\\s*see\\s+(?:above|below)\\s*\\)",
+        "\\(\\s*(?:ibid|id\\.|op\\.\\s*cit\\.|loc\\.\\s*cit\\.)\\s*(?:,\\s*[^)]{0,30})?\\)",
+        "\\(\\s*(?:spoke|speaking|statement|intervention)\\s+(?:in|was\\s+(?:made|delivered)\\s+in)\\s+(?:English|French|Spanish|Arabic|Russian|Chinese)\\s*(?:;[^)]{0,30})?\\)",
+        "\\(\\s*(?:The\\s+)?(?:original|text)\\s+(?:was\\s+)?(?:in|is)\\s+(?:English|French|Spanish|Arabic|Russian|Chinese)\\s*\\)",
+        "\\(\\s*(?:translation|interpreted|interpretation)\\s+(?:from|by)[^)]{0,60}\\)"
+      ]
+    },
+    "allcaps_document_headers": {
+      "enabled": false,
+      "description": "All-caps single-line document headers (disabled - validate on sample before enabling)",
+      "patterns": [
+        "^\\s*[A-Z][A-Z\\s\\-\\/\\.]{4,60}[A-Z]\\s*$",
+        "^\\s*(?:ANNEX|APPENDIX|SCHEDULE|ADDENDUM|CORRIGENDUM)\\s+[IVX\\d]+[\\s\\S]{0,80}?$"
       ]
     },
     "closing_statements": {
