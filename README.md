@@ -2,7 +2,7 @@
 
 A data-driven tool for removing boilerplate text from United Nations speeches and documents using frequency-based n-gram analysis combined with pattern matching.
 
-## 🎯 Overview
+## Overview
 
 This project addresses the challenge of cleaning UN speeches by removing:
 - Administrative boilerplate (budget tables, status markers)
@@ -20,7 +20,7 @@ This project addresses the challenge of cleaning UN speeches by removing:
 - **Configurable Aggressiveness**: Adjustable frequency thresholds and category selection
 - **Comprehensive Statistics**: Detailed removal metrics and before/after comparisons
 
-## 📊 Performance
+## Performance
 
 **Current Results (100 sample speeches):**
 - Average text reduction: **16.9%** (vs 12.9% with patterns only)
@@ -36,7 +36,7 @@ This project addresses the challenge of cleaning UN speeches by removing:
 - Ceremonial phrases: 2 phrases
 - Metadata: 16 phrases
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -81,7 +81,7 @@ df, stats = cleaner.clean_csv(
 )
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 un-cleaning/
@@ -104,7 +104,7 @@ un-cleaning/
 └── README.md
 ```
 
-## 🔧 Advanced Usage
+## Advanced Usage
 
 ### Extract Boilerplate from Your Corpus
 
@@ -140,7 +140,7 @@ cleaned_text, stats = cleaner.clean_text(
 # procedural, metadata, entity_names, ceremonial
 ```
 
-## 📈 Methodology
+## Methodology
 
 ### 1. N-gram Frequency Analysis
 
@@ -167,7 +167,7 @@ Regex patterns target specific boilerplate types:
 2. **Second Pass**: Regex pattern matching (flexible, catches variations)
 3. **Post-processing**: Whitespace normalization, paragraph filtering
 
-## 📊 Comparison with Existing Methods
+## Comparison with Existing Methods
 
 **Academic Approaches (Baturo et al. 2017, 2025):**
 - Basic preprocessing: tokenization, stopwords, stemming
@@ -179,7 +179,7 @@ Regex patterns target specific boilerplate types:
 - **Achieves 16.9% text reduction**
 - Preserves substantive content
 
-## 🔍 Data Sources
+## Data Sources
 
 This project works with UN General Debate speeches and can process:
 - UN General Assembly transcripts
@@ -191,7 +191,7 @@ This project works with UN General Debate speeches and can process:
 - CSV file with text column
 - Optional: BLOC_ columns for international organization memberships
 
-## 🛠️ Tools & Dependencies
+## Tools & Dependencies
 
 - Python 3.8+
 - pandas
@@ -199,7 +199,7 @@ This project works with UN General Debate speeches and can process:
 - re (standard library)
 - pathlib (standard library)
 
-## 📝 Configuration Files
+## Configuration Files
 
 ### config_boilerplate.json
 
@@ -237,12 +237,12 @@ Auto-generated categorized phrases from corpus:
 ]
 ```
 
-## 📚 Documentation
+## Documentation
 
 - [BOILERPLATE_ANALYSIS_AND_RECOMMENDATIONS.md](BOILERPLATE_ANALYSIS_AND_RECOMMENDATIONS.md) - Detailed analysis of cleaning effectiveness
 - [Comparison Analysis](compare_cleaning_methods.py) - Compare different cleaning approaches
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Areas for improvement:
 - Machine learning-based boilerplate detection
@@ -251,21 +251,21 @@ Contributions welcome! Areas for improvement:
 - Improved regex patterns
 - Performance optimization
 
-## 📄 License
+## License
 
 MIT License - feel free to use and modify for your research.
 
-## 🔗 Related Work
+## Related Work
 
 - **UN General Debate Corpus (UNGDC)**: Baturo, Dasandi, Mikhaylov (2017, 2025)
 - **UN Parallel Corpus**: Official UN multilingual corpus
 - **Research**: "Understanding State Preferences With Text As Data" (Research & Politics, 2017)
 
-## 📧 Contact
+## Contact
 
 For questions, issues, or collaboration opportunities, please open an issue on GitHub.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - N-gram frequency data extracted from UN document corpus
 - Configuration patterns developed through manual analysis of UN speeches
