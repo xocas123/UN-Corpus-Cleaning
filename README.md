@@ -255,22 +255,6 @@ Contributions welcome! Areas for improvement:
 
 MIT License - feel free to use and modify for your research.
 
-## Related Work
-
-- **UN General Debate Corpus (UNGDC)**: Baturo, Dasandi, Mikhaylov (2017, 2025)
-- **UN Parallel Corpus**: Official UN multilingual corpus
-- **Research**: "Understanding State Preferences With Text As Data" (Research & Politics, 2017)
-
-## Contact
-
-For questions, issues, or collaboration opportunities, please open an issue on GitHub.
-
-## Acknowledgments
-
-- N-gram frequency data extracted from UN document corpus
-- Configuration patterns developed through manual analysis of UN speeches
-- Inspired by academic work on UN General Debate Corpus
-
 ---
 
 **Note**: This tool is designed for research purposes. For production use, please validate outputs and adjust parameters based on your specific corpus characteristics.
