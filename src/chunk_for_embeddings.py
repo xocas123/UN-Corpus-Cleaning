@@ -126,21 +126,23 @@ class ParagraphChunker:
         if len(text) <= MAX_CHUNK_CHARS:
             return [(text, "no_split")]
 
-        # Level 1: double newline
+        # Level 1: double newline (real paragraph breaks)
         if "\n\n" in text:
-            chunks = [c.strip() for c in text.split("\n\n")
-                      if len(c.strip()) >= MIN_CHUNK_CHARS]
-            if len(chunks) > 1:
-                return [(c, "paragraph") for c in chunks]
+            paras = [c.strip() for c in text.split("\n\n")
+                     if len(c.strip()) >= MIN_CHUNK_CHARS]
+            if len(paras) > 1:
+                # Sub-chunk any oversized paragraphs via sentence splitting
+                result = []
+                for p in paras:
+                    if len(p) > MAX_CHUNK_CHARS:
+                        sub = self._split_sentences_greedy(p)
+                        result.extend((s, "paragraph") for s in sub)
+                    else:
+                        result.append((p, "paragraph"))
+                return result if result else [(text, "no_split")]
 
-        # Level 2: single newline
-        if "\n" in text:
-            chunks = [c.strip() for c in text.split("\n")
-                      if len(c.strip()) >= MIN_CHUNK_CHARS]
-            if len(chunks) > 1:
-                return [(c, "newline") for c in chunks]
-
-        # Level 3: sentence boundaries with greedy grouping
+        # Level 2: sentence boundaries with greedy grouping
+        # (skip single \n — it's usually PDF line wrapping, not paragraphs)
         sentence_chunks = self._split_sentences_greedy(text)
         if len(sentence_chunks) > 1:
             return [(c, "sentence") for c in sentence_chunks]
