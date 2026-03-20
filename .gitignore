@@ -30,10 +30,11 @@ wheels/
 *.swo
 *~
 
-# Data files (large CSV inputs/outputs)
+# Data files (large CSV/JSONL inputs/outputs)
 Inputs/*.csv
 Outputs/*.csv
 *.csv
+*.jsonl
 
 # Keep example/sample files
 !Inputs/README.md
