@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python -c \":*)"
+      "Bash(python -c \":*)",
+      "Bash(tasklist)",
+      "Bash(python src/chunk_for_embeddings.py)"
     ]
   }
 }

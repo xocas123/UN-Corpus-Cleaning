@@ -110,9 +110,9 @@ class EnhancedUNTextCleaner:
         if not self.ngram_boilerplate:
             return text, {"ngrams_removed": 0}
 
-        # Default: AGGRESSIVE - remove ALL categories including ceremonial
+        # Default: remove all categories EXCEPT ceremonial (too aggressive for speech corpora)
         if categories is None:
-            categories = ['formatting', 'administrative', 'procedural', 'metadata', 'entity_names', 'ceremonial']
+            categories = ['formatting', 'administrative', 'procedural', 'metadata', 'entity_names']
 
         cleaned = text
         removals = {}

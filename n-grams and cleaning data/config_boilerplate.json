@@ -1,6 +1,6 @@
 {
   "description": "UN Document Boilerplate Text Cleaning Configuration",
-  "version": "2.0",
+  "version": "2.1",
   "boilerplate_patterns": {
     "formatting_artifacts": {
       "enabled": true,
@@ -58,29 +58,29 @@
       ]
     },
     "opening_ceremonials": {
-      "enabled": true,
-      "description": "Opening phrases thanking previous speakers and officials",
+      "enabled": false,
+      "description": "DISABLED: 'On behalf of' and 'congratulate' appear in substantive speech content too frequently. These patterns were removing real policy text.",
       "patterns": [
-        "(?:On behalf of the General Assembly|On behalf of|I have the honour to welcome).*?(?=[A-Z][a-z]+\\s+(?:said|spoke|stated|addressed))",
-        "(?:Allow me|I would like to|We would like to)\\s+(?:at the outset|at the beginning)\\s+to(?:.*?)congratulate.*?(?=\\w+\\s+(?:said|spoke|stated))",
-        "I would like to congratulate.*?(?:\\n\\n|\\n[A-Z])"
+        "(?:On behalf of the General Assembly|I have the honour to welcome)[^.!?]{0,250}[.!?]",
+        "(?:Allow me|I would like to|We would like to)\\s+(?:at the outset|at the beginning)\\s+to[^.!?]{0,250}congratulate[^.!?]{0,150}[.!?]",
+        "I would like to congratulate[^.!?]{0,250}[.!?]"
       ]
     },
     "procedural_markers": {
       "enabled": true,
-      "description": "Chair/President procedural statements",
+      "description": "Chair/President procedural statements (single line only)",
       "patterns": [
-        "(?:The\\s+)?(?:President|Chair|Chairperson):\\s+.*?(?=\\n[A-Z])",
-        "(?:The President|The Chair):\\s+.*?(?=\\n\\w+)"
+        "(?:The\\s+)?(?:President|Chair|Chairperson):\\s+[^\\n]{0,300}(?=\\n)",
+        "(?:The President|The Chair):\\s+[^\\n]{0,300}(?=\\n)"
       ]
     },
     "gratitude_sections": {
-      "enabled": true,
-      "description": "Sections thanking Secretary-General, previous presidents, etc.",
+      "enabled": false,
+      "description": "DISABLED: 'Thank you for the...' and 'I would like to thank...' appear in substantive speech too frequently. These patterns were removing real content.",
       "patterns": [
-        "I would like to thank.*?Secretary-General.*?(?=\\n\\n|\\n[A-Z])",
-        "I would also like to (?:congratulate|thank).*?(?=\\n\\n|\\n[A-Z][a-z])",
-        "Thank you.*?(?:for your|for the).*?(?=\\n\\n|\\n[A-Z])"
+        "I would like to thank[^.!?]{0,200}Secretary-General[^.!?]{0,150}[.!?]",
+        "I would also like to (?:congratulate|thank)[^.!?]{0,250}[.!?]",
+        "Thank you[^.!?]{0,100}(?:for your|for the)[^.!?]{0,150}[.!?]"
       ]
     },
     "document_references": {
@@ -130,20 +130,20 @@
       ]
     },
     "closing_statements": {
-      "enabled": true,
-      "description": "Generic closing phrases about UN values and hope",
+      "enabled": false,
+      "description": "DISABLED: 'In conclusion' often introduces substantive concluding arguments, not boilerplate.",
       "patterns": [
-        "In conclusion,.*?(?=\\Z|\\n{2,})",
-        "(?:Confidence and hope|All of us, as in a marriage).*?(?=\\Z)",
-        "The world's problems could be solved peacefully.*?(?=\\Z)"
+        "In conclusion,[^.!?]{0,300}[.!?]",
+        "(?:Confidence and hope|All of us, as in a marriage)[^.!?]{0,300}[.!?]",
+        "The world's problems could be solved peacefully[^.!?]{0,300}[.!?]"
       ]
     },
     "ceremonial_phrases": {
       "enabled": true,
       "description": "Ceremonial opening and closing language",
       "patterns": [
-        "\\*+.*?\\*+",
-        "\\n\\s+.*?\\(spoke in (?:English|French|Spanish|Arabic)\\).*?\\n",
+        "\\*+[^*]{0,200}\\*+",
+        "\\n\\s+[^\\n]{0,200}\\(spoke in (?:English|French|Spanish|Arabic)\\)[^\\n]{0,100}\\n",
         "Address/Statement recorded in .*?\\)"
       ]
     }
