@@ -44,6 +44,79 @@ GROUP_NAMES = [
 
 SENTENCE_SPLIT_RE = re.compile(r'(?<=[.!?])\s+')
 
+# Extra name->ISO3 aliases for countries not in country_groups.json mapping
+COUNTRY_ALIASES = {
+    "switzerland": "CHE", "czechia": "CZE", "czech republic": "CZE",
+    "palestinian territories": "PSE", "palestine": "PSE", "state of palestine": "PSE",
+    "sierra leone": "SLE", "armenia": "ARM", "somalia": "SOM",
+    "djibouti": "DJI", "myanmar (burma)": "MMR", "myanmar": "MMR", "burma": "MMR",
+    "côte d'ivoire": "CIV", "cote d'ivoire": "CIV", "c\u00f4te d\u2019ivoire": "CIV",
+    "ivory coast": "CIV", "maldives": "MDV", "barbados": "BRB",
+    "guinea": "GIN", "togo": "TGO", "guyana": "GUY", "gabon": "GAB",
+    "cambodia": "KHM", "botswana": "BWA", "gambia": "GMB", "suriname": "SUR",
+    "comoros": "COM", "benin": "BEN", "trinidad & tobago": "TTO",
+    "trinidad and tobago": "TTO", "brunei": "BRN", "brunei darussalam": "BRN",
+    "dominica": "DMA", "mongolia": "MNG", "angola": "AGO",
+    "congo - kinshasa": "COD", "democratic republic of the congo": "COD",
+    "dr congo": "COD", "congo - brazzaville": "COG", "republic of the congo": "COG",
+    "bhutan": "BTN", "liberia": "LBR", "haiti": "HTI", "madagascar": "MDG",
+    "eritrea": "ERI", "lesotho": "LSO", "malawi": "MWI", "burundi": "BDI",
+    "guinea-bissau": "GNB", "turkmenistan": "TKM", "laos": "LAO",
+    "mauritius": "MUS", "central african republic": "CAF",
+    "equatorial guinea": "GNQ", "chad": "TCD", "solomon islands": "SLB",
+    "vanuatu": "VUT", "samoa": "WSM", "swaziland": "SWZ", "eswatini": "SWZ",
+    "cape verde": "CPV", "cabo verde": "CPV", "timor-leste": "TLS",
+    "east timor": "TLS", "south sudan": "SSD", "north korea": "PRK",
+    "south korea": "KOR", "republic of korea": "KOR",
+    "democratic people's republic of korea": "PRK", "iran": "IRN",
+    "syria": "SYR", "syria (syrian arab republic)": "SYR",
+    "libya": "LBY", "venezuela": "VEN", "bolivia": "BOL",
+    "tanzania": "TZA", "vietnam": "VNM", "viet nam": "VNM",
+    "moldova": "MDA", "republic of moldova": "MDA",
+    "north macedonia": "MKD", "bosnia and herzegovina": "BIH",
+    "ivory coast": "CIV", "marshall islands": "MHL", "kiribati": "KIR",
+    "nauru": "NRU", "palau": "PLW", "tonga": "TON", "tuvalu": "TUV",
+    "micronesia": "FSM", "federated states of micronesia": "FSM",
+    "antigua and barbuda": "ATG", "antigua & barbuda": "ATG",
+    "saint kitts and nevis": "KNA", "st. kitts and nevis": "KNA",
+    "saint kitts & nevis": "KNA", "st. kitts & nevis": "KNA",
+    "saint lucia": "LCA", "st. lucia": "LCA",
+    "saint vincent and the grenadines": "VCT", "st. vincent and the grenadines": "VCT",
+    "sao tome and principe": "STP", "são tomé and príncipe": "STP",
+    "papua new guinea": "PNG", "rwanda": "RWA", "niger": "NER",
+    "mali": "MLI", "burkina faso": "BFA", "mauritania": "MRT",
+    "mozambique": "MOZ", "zambia": "ZMB", "zimbabwe": "ZWE",
+    "uganda": "UGA", "seychelles": "SYC", "fiji": "FJI",
+    "grenada": "GRD", "belize": "BLZ", "bahamas": "BHS",
+    "san marino": "SMR", "andorra": "AND", "liechtenstein": "LIE",
+    "monaco": "MCO", "holy see": "VAT", "vatican": "VAT",
+    "vatican city": "VAT", "st. vincent & grenadines": "VCT",
+    "st. vincent & the grenadines": "VCT",
+    "dominican republic": "DOM", "tajikistan": "TJK", "serbia": "SRB",
+    "kyrgyzstan": "KGZ", "yugoslavia": "YUG",
+    "bosnia & herzegovina": "BIH",
+    "micronesia (federated states of)": "FSM",
+    "congo (democratic republic of the)": "COD",
+    "congo (republic of the)": "COG",
+    "são tomé & príncipe": "STP", "sao tome & principe": "STP",
+    "s\u00e3o tom\u00e9 & pr\u00edncipe": "STP",
+    "st. kitts and nevis": "KNA", "st. kitts & nevis": "KNA",
+    "lao people's democratic republic": "LAO",
+    "côte d'ivoire": "CIV",
+    "democratic people's republic of korea": "PRK",
+    "taiwan": "TWN", "chinese taipei": "TWN",
+    "kosovo": "XKX", "south georgia": "SGS",
+    "american samoa": "ASM", "bermuda": "BMU",
+    "cayman islands": "CYM", "guam": "GUM",
+    "puerto rico": "PRI", "us virgin islands": "VIR",
+    "british virgin islands": "VGB", "turks and caicos islands": "TCA",
+    "aruba": "ABW", "curaçao": "CUW", "curacao": "CUW",
+    "sint maarten": "SXM", "new caledonia": "NCL",
+    "french polynesia": "PYF", "tokelau": "TKL",
+    "niue": "NIU", "cook islands": "COK",
+    "western sahara": "ESH",
+}
+
 
 # ---------------------------------------------------------------------------
 # ParagraphChunker
@@ -84,7 +157,12 @@ class ParagraphChunker:
             name.strip().lower(): code for code, name in iso3_to_name.items()
         }
 
-        # Collect group membership lists (exclude the mapping dict itself)
+        # Merge hardcoded aliases for countries missing from the JSON
+        for alias, iso3 in COUNTRY_ALIASES.items():
+            if alias.lower() not in self.name_to_iso3:
+                self.name_to_iso3[alias.lower()] = iso3
+
+        # Collect group membership lists
         group_lists: Dict[str, set] = {}
         for g in GROUP_NAMES:
             members = data.get(g, [])
@@ -96,8 +174,8 @@ class ParagraphChunker:
                 g: iso3 in members for g, members in group_lists.items()
             }
 
-        print(f"  Loaded {len(self.name_to_iso3)} country mappings, "
-              f"{len(GROUP_NAMES)} groups")
+        print(f"  Loaded {len(self.name_to_iso3)} country mappings "
+              f"({len(COUNTRY_ALIASES)} aliases), {len(GROUP_NAMES)} groups")
 
     def resolve_country(self, country_name) -> Tuple[Optional[str], Dict[str, bool]]:
         empty_groups = {g: False for g in GROUP_NAMES}
@@ -105,11 +183,20 @@ class ParagraphChunker:
         if pd.isna(country_name) or not str(country_name).strip():
             return None, empty_groups
 
-        key = str(country_name).strip().lower()
+        raw = str(country_name).strip()
+        key = raw.lower()
+        # Normalize mojibake and encoding artifacts
+        key = key.replace("\ufffd", "").replace("�", "")
         iso3 = self.name_to_iso3.get(key)
+        # Try without accents/special chars as fallback
+        if iso3 is None:
+            import unicodedata
+            nfkd = unicodedata.normalize("NFKD", key)
+            ascii_key = nfkd.encode("ascii", "ignore").decode("ascii").strip()
+            iso3 = self.name_to_iso3.get(ascii_key)
 
         if iso3 is None:
-            self.unmapped_countries[str(country_name).strip()] += 1
+            self.unmapped_countries[raw] += 1
             return None, empty_groups
 
         groups = self.name_to_groups.get(key, empty_groups)
@@ -168,7 +255,25 @@ class ParagraphChunker:
         if buffer.strip():
             chunks.append(buffer.strip())
 
-        return [c for c in chunks if len(c) >= MIN_CHUNK_CHARS]
+        # Hard-split any chunk that still exceeds max (single long sentence)
+        final: List[str] = []
+        for c in chunks:
+            if len(c) <= MAX_CHUNK_CHARS:
+                final.append(c)
+            else:
+                # Split on comma or semicolon boundaries
+                parts = re.split(r'(?<=[,;])\s+', c)
+                buf = ""
+                for p in parts:
+                    if buf and len(buf) + len(p) + 1 > MAX_CHUNK_CHARS:
+                        final.append(buf.strip())
+                        buf = p
+                    else:
+                        buf = f"{buf} {p}".strip() if buf else p
+                if buf.strip():
+                    final.append(buf.strip())
+
+        return [c for c in final if len(c) >= MIN_CHUNK_CHARS]
 
     # ---- main processing --------------------------------------------------
 
@@ -178,7 +283,7 @@ class ParagraphChunker:
         skipped = 0
 
         total = len(self.df)
-        for i, (_, row) in enumerate(self.df.iterrows()):
+        for i, (row_idx, row) in enumerate(self.df.iterrows()):
             if (i + 1) % 10000 == 0:
                 print(f"  Chunked {i + 1}/{total} docs ...")
 
@@ -194,7 +299,7 @@ class ParagraphChunker:
             for ci, (chunk_text, method) in enumerate(chunks):
                 stats[method] += 1
                 out = {
-                    "chunk_id": f"{row['doc_id']}_chunk{ci:03d}",
+                    "chunk_id": f"{row['doc_id']}_r{row_idx}_chunk{ci:03d}",
                     "doc_id": row["doc_id"],
                     "chunk_index": ci,
                     "chunk_total": len(chunks),
